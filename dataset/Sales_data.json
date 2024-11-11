@@ -37,7 +37,7 @@
 			},
 			{
 				"name": "SALES",
-				"type": "String"
+				"type": "Integer"
 			},
 			{
 				"name": "ORDERDATE",
