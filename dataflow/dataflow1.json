@@ -24,19 +24,18 @@
 				"          QUANTITYORDERED as string,",
 				"          PRICEEACH as string,",
 				"          ORDERLINENUMBER as string,",
-				"          SALES as string,",
+				"          SALES as integer,",
 				"          ORDERDATE as string,",
-				"          STATUS as integer,",
+				"          STATUS as string,",
 				"          QTR_ID as string,",
 				"          MONTH_ID as string,",
 				"          YEAR_ID as string",
 				"     ),",
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
-				"     inferDriftedColumnTypes: true,",
 				"     ignoreNoFilesFound: false) ~> input",
-				"input split(SALES < 2000,",
-				"     disjoint: false) ~> split1@(sales less than 2000, sales greater than 2000)"
+				"input split(ERROR_FUNCTION(''),",
+				"     disjoint: false) ~> split1@(, )"
 			]
 		}
 	}
