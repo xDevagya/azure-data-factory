@@ -1,0 +1,9 @@
+{
+	"name": "ezdatafactree",
+	"location": "canadacentral",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "5079e5fe-5f3a-4ad1-b424-7620beb4be7d",
+		"tenantId": "0f23ee33-3b51-4fd2-9f40-96ba2118ea5e"
+	}
+}
