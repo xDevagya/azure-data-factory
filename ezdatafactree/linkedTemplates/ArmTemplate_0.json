@@ -80,7 +80,7 @@
 				"type": "AzureSqlTable",
 				"schema": [],
 				"typeProperties": {
-					"schema": "asdf",
+					"schema": "sales_mart",
 					"table": "sales"
 				}
 			},
@@ -101,7 +101,7 @@
 				"type": "AzureSqlTable",
 				"schema": [],
 				"typeProperties": {
-					"schema": "asdf",
+					"schema": "sales_mart",
 					"table": "sales2"
 				}
 			},
