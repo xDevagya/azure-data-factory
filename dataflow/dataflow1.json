@@ -26,7 +26,7 @@
 				"          ORDERLINENUMBER as string,",
 				"          SALES as string,",
 				"          ORDERDATE as string,",
-				"          STATUS as string,",
+				"          STATUS as integer,",
 				"          QTR_ID as string,",
 				"          MONTH_ID as string,",
 				"          YEAR_ID as string",
@@ -35,8 +35,8 @@
 				"     validateSchema: false,",
 				"     inferDriftedColumnTypes: true,",
 				"     ignoreNoFilesFound: false) ~> input",
-				"input split(ERROR_FUNCTION(''),",
-				"     disjoint: false) ~> split1@(, )"
+				"input split(SALES < 2000,",
+				"     disjoint: false) ~> split1@(sales less than 2000, sales greater than 2000)"
 			]
 		}
 	}
